@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Vibe Google Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Link to the above CSS file -->
+</head>
+<body>
+
+    <h1>🌸 Welcome to Your Anime Destiny! 🌸</h1>
+
+    <div class="form-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2V7q1tcZTqCndY6KyxAhCRugKGziBpo-XnFjpQkBXaL9jIw/viewform?embedded=true"></iframe>
+    </div>
+
+    <!-- Sakura Petals Container -->
+    <script>
+        function createPetal() {
+            const petal = document.createElement("div");
+            petal.classList.add("petal");
+            petal.style.left = Math.random() * window.innerWidth + "px";
+            petal.style.animationDuration = Math.random() * 5 + 3 + "s"; // Random fall speed
+            document.body.appendChild(petal);
+            
+            setTimeout(() => {
+                petal.remove();
+            }, 8000);
+        }
+
+        setInterval(createPetal, 300); // Generate a petal every 300ms
+    </script>
+
+</body>
+</html>
